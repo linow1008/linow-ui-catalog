@@ -1,0 +1,14 @@
+import { cn } from "@/lib/utils";
+
+interface {{pascalCase name}}Props {
+  className?: string;
+  children?: React.ReactNode;
+}
+
+export function {{pascalCase name}}({ className, children }: {{pascalCase name}}Props) {
+  return (
+    <div className={cn("", className)}>
+      {children}
+    </div>
+  );
+}
