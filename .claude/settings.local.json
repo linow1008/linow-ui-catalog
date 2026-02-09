@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(del:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm ls:*)",
+      "Bash(node -e:*)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}

@@ -7,7 +7,9 @@ import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 import { siteConfig } from "@/config/site";
 
-import "./globals.css";
+import { CatalogLayout } from "@/components/layout";
+
+import "../globals.css";
 
 const notoSansKr = Noto_Sans_KR({
   subsets: ["latin"],
@@ -113,7 +115,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <QueryProvider>
-            <NuqsAdapter>{children}</NuqsAdapter>
+            <NuqsAdapter>
+              <CatalogLayout>{children}</CatalogLayout>
+            </NuqsAdapter>
           </QueryProvider>
         </ThemeProvider>
       </body>
